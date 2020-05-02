@@ -1,3 +1,6 @@
 /xenforo/*
 /vendor/*
 !/xenforo/.gitkeep
+!/xenforo/src/
+/xenforo/src/*
+!/xenforo/src/config.php
