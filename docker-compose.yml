@@ -1,0 +1,49 @@
+version: '3.1'
+
+services:
+
+  xf2-php-apache:
+    build: ./docker/xenforo-php
+    ports:
+      - 80:80
+    volumes:
+      - ./xenforo:/var/www/html
+      - ./build:/var/www/html/src/addons/LH
+
+  xf2-database:
+    image: mariadb:10.3
+    volumes:
+      - xf2dbdata:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=homestead"
+      - "MYSQL_USER=homestead"
+      - "MYSQL_PASSWORD=secret"
+      - "MYSQL_ROOT_PASSWORD=secret"
+    ports:
+      - "33061:3306"
+
+  phpmyadmin:
+    depends_on:
+      -   xf2-database
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: xf2-database
+      MYSQL_ROOT_PASSWORD: secret
+
+  ngrok:
+      image: shkoliar/ngrok:latest
+      ports:
+        - 4551:4551
+      links:
+        - "xf2-php-apache"
+      environment:
+        - DOMAIN=xf2-php-apache
+        - PORT=80
+        - REGION=eu
+        - PROTOCOL=http
+
+volumes:
+  xf2dbdata:

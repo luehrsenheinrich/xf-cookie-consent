@@ -1,0 +1,8 @@
+{
+    "name": "luehrsenheinrich/lh-xenforo",
+    "type": "xenforo-addon",
+    "require": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpcompatibility/php-compatibility": "^9.3"
+    }
+}

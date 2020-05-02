@@ -1,0 +1,19 @@
+{
+  "name": "lh-xenforo",
+  "version": "1.0.0",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "setup": "sh bin/setup.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luehrsenheinrich/gwfw-xenforo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luehrsenheinrich/gwfw-xenforo/issues"
+  },
+  "homepage": "https://github.com/luehrsenheinrich/gwfw-xenforo#readme"
+}

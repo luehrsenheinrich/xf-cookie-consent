@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="Xenforo-LH">
+	<description>Some additional rule settings for development at Luehrsen // Heinrich</description>
+
+	<arg name="extensions" value="php"/>
+	<file>./build</file>
+	<exclude-pattern>*/_output/*</exclude-pattern>
+	<exclude-pattern>./xenforo</exclude-pattern>
+
+	<!-- For CI, don't fail on warnings -->
+	<config name="ignore_warnings_on_exit" value="1"/>
+
+	<arg name="tab-width" value="4"/>
+
+	<!-- Load PSR12 -->
+	<rule ref="PSR12">
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+		<exclude name="Generic.Files.LineLength.TooLong"/>
+	</rule>
+
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<rule ref="Generic.WhiteSpace.ScopeIndent">
+			<properties>
+					<property name="indent" value="4"/>
+					<property name="tabIndent" value="true"/>
+			</properties>
+	</rule>
+</ruleset>
