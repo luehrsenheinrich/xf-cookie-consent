@@ -13,3 +13,4 @@ $config['development']['enabled'] = true;
 $config['development']['defaultAddOn'] = 'LH/CookieConsent';
 $config['enableLivePayments'] = false;
 $config['designer']['enabled'] = true;
+$config['development']['fullJs'] = true;

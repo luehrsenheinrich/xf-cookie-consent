@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "Cookie Consent",
+    "description": "Get proper consent to place cookies from your users.",
+    "version_id": 1,
+    "version_string": "0.0.1",
+    "dev": "Luehrsen // Heinrich",
+    "dev_url": "https://www.luehrsen-heinrich.de",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": [],
+    "icon": "fa-cookie-bite"
+}

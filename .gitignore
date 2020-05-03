@@ -1,6 +1,11 @@
 /xenforo/*
 /vendor/*
+/node_modules/*
 !/xenforo/.gitkeep
 !/xenforo/src/
 /xenforo/src/*
 !/xenforo/src/config.php
+
+## Ignore autgenerated files
+*.bundle.js
+*.min.js

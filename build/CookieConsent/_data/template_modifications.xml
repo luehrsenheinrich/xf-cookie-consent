@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="PAGE_CONTAINER" modification_key="lh_cookieconsent_pagecontainer" description="Add data needed for this addon to the page container." execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[</body>
+</html>]]></find>
+    <replace><![CDATA[<xf:js dev="lh/cookieconsent/test.js" addon="LH/CookieConsent"  />
+$0]]></replace>
+  </modification>
+</template_modifications>

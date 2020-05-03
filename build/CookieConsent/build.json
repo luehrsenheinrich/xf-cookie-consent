@@ -1,0 +1,8 @@
+{
+    "additional_files": [
+        "js/lh/cookieconsent"
+    ],
+		"exec": [
+			"rm -rf _build/upload/src/addons/LH/CookieConsent/js"
+		]
+}

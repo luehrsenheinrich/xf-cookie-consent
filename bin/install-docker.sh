@@ -30,6 +30,18 @@ if docker inspect -f {{.State.Running}} $(docker ps -a -q --filter="publish=80")
 	docker stop $(docker ps -a -q --filter="publish=80")
 fi
 
+# Stop containers on port 4551
+if docker inspect -f {{.State.Running}} $(docker ps -a -q --filter="publish=4551") >/dev/null 2>&1; then
+	echo $(status_message "Stopping Docker containers on port 4551...")
+	docker stop $(docker ps -a -q --filter="publish=4551")
+fi
+
+# Stop containers on port 3361
+if docker inspect -f {{.State.Running}} $(docker ps -a -q --filter="publish=3306") >/dev/null 2>&1; then
+	echo $(status_message "Stopping Docker containers on port 3306...")
+	docker stop $(docker ps -a -q --filter="publish=3306")
+fi
+
 # Download image updates
 echo $(status_message "Downloading Docker image updates...")
 docker-compose pull
