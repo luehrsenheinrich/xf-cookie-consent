@@ -1,12 +1,11 @@
 const path = require( 'path' );
 const webpack = require( 'webpack' );
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	mode: 'none',
 	entry: {
-		'test.bundle': path.resolve( __dirname, './build/CookieConsent/js/test.js' ),
+		'klaro.bundle': path.resolve( __dirname, './build/CookieConsent/js/klaro.js' ),
 	},
 	output: {
 		path: path.resolve(__dirname, './build/CookieConsent/_files/js/lh/cookieconsent/'),
@@ -18,9 +17,6 @@ module.exports = {
 			files: ['build/CookieConsent/**/*.php'],
 			open: false,
 		}),
-		new CopyPlugin([
-				{ from: 'node_modules/klaro/dist', to: '' },
-		]),
 	],
 	module: {
 		rules: [
