@@ -1,0 +1,98 @@
+{
+    "option.ccAcceptAll.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "1a9bf41c457d79d50e35dcfadafbd966"
+    },
+    "option.ccCookieExpires.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "2a3f894d88c9fe313ead8e57f1e3170f"
+    },
+    "option.ccCookieName.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "fc1231780dede8cda37d67fb6290b358"
+    },
+    "option.ccDeclineAll.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "97ab3806d9b7330c00dc5e95e55d3a7d"
+    },
+    "option.ccDefaultState.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "1835762c7b720a89300f57ff92310033"
+    },
+    "option.ccMustConsent.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "9dc659ab42840f4c63c6dfb8a9475c20"
+    },
+    "option.ccStorageMethod.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "e8aed74176133c290932073becbdbe03"
+    },
+    "option_explain.ccAcceptAll.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "12d46b5d88f302dc0b118d6bb0737f90"
+    },
+    "option_explain.ccCookieExpires.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "32e36c522424832c6eaafdcadca64725"
+    },
+    "option_explain.ccCookieName.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "3b26911f962ff49417e70dc9b806bcd4"
+    },
+    "option_explain.ccDeclineAll.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "e3e24943e8ba749c3b5334ff12ec327f"
+    },
+    "option_explain.ccDefaultState.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "c513e044ce758e59b41101c9d5e6a240"
+    },
+    "option_explain.ccMustConsent.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "2c20bfc922b2ae9d3734643e89050ab3"
+    },
+    "option_explain.ccStorageMethod.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "daeda7610b5dce82d37d9a28fd92ad1c"
+    },
+    "option_group.lhCookieConsent.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "94977ddb4a0578596dfe9e45511d7422"
+    },
+    "option_group_description.lhCookieConsent.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "d71a3cd71bc791af197c4fcfffe4525d"
+    }
+}

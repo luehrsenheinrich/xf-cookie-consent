@@ -1,0 +1,12 @@
+{
+    "edit_format": "radio",
+    "edit_format_params": "cookie=Cookie\nlocalStorage=Local Storage",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "default_value": "localStorage",
+    "relations": {
+        "lhCookieConsent": 10
+    }
+}

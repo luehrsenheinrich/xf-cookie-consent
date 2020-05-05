@@ -1,0 +1,1 @@
+Show a button to allow all cookies to be accepted.

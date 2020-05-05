@@ -1,0 +1,1 @@
+If this is true the consent manager modal is immediately shown without the ability to interact with the site.

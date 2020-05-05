@@ -1,0 +1,1 @@
+The name of the cookie, that we use for storing user consent decisions.

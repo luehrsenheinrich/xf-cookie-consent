@@ -1,0 +1,1 @@
+The default state for applications, if they are enabled by default.
