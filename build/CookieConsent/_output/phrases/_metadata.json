@@ -5,6 +5,12 @@
         "version_string": "0.0.1",
         "hash": "1a9bf41c457d79d50e35dcfadafbd966"
     },
+    "option.ccApp.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "a6f00c82b6eb55a13a1f242313aaf9c9"
+    },
     "option.ccCookieExpires.txt": {
         "global_cache": false,
         "version_id": 1,
@@ -46,6 +52,12 @@
         "version_id": 1,
         "version_string": "0.0.1",
         "hash": "12d46b5d88f302dc0b118d6bb0737f90"
+    },
+    "option_explain.ccApp.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
     },
     "option_explain.ccCookieExpires.txt": {
         "global_cache": false,
