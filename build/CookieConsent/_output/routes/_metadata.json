@@ -1,5 +1,8 @@
 {
-    "admin_cookies_.json": {
-        "hash": "78d5d7a0113afac190132df5d571e756"
+    "admin_cookie-consent_apps.json": {
+        "hash": "d19a1f5f1ed24656b2c1bdbc04edc9a6"
+    },
+    "admin_cookie-consent_purposes.json": {
+        "hash": "6927a3c56efd706bfb0e78d47e06441f"
     }
 }

@@ -5,15 +5,15 @@ namespace LH\CookieConsent\Entity;
 use XF\Mvc\Entity\Entity;
 use XF\Mvc\Entity\Structure;
 
-class Cookie extends Entity
+class App extends Entity
 {
 	public static function getStructure(Structure $structure)
 	{
-		$structure->table = 'xf_lh_cookie';
-		$structure->shortName = 'LH\CookieConsent:Cookie';
-		$structure->primaryKey = 'cookie_id';
+		$structure->table = 'xf_lh_cookie_app';
+		$structure->shortName = 'LH\CookieConsent:App';
+		$structure->primaryKey = 'app_id';
 		$structure->columns = [
-			'cookie_id' => ['type' => self::UINT, 'autoIncrement' => true, 'nullable' => true],
+			'app_id' => ['type' => self::UINT, 'autoIncrement' => true, 'nullable' => true],
 			'name' => [
 				'type' => self::STR,
 				'maxLength' => 50,
@@ -25,6 +25,11 @@ class Cookie extends Entity
 				'maxLength' => 50,
 				'required' => 'please_enter_valid_title',
 			],
+			'description' => [
+				'type' => self::STR,
+				'maxLength' => 255,
+			],
+			'purposes' => ['type' => self::JSON_ARRAY, 'default' => []],
 			'cookies' => ['type' => self::STR, 'default' => ''],
 			'callback' => ['type' => self::STR, 'default' => ''],
 			'active' => ['type' => self::BOOL, 'default' => true],

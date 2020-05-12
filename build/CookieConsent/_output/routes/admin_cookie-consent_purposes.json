@@ -1,0 +1,11 @@
+{
+    "route_type": "admin",
+    "route_prefix": "cookie-consent",
+    "sub_name": "purposes",
+    "format": "purposes/:str<purpose_id>/",
+    "build_class": "",
+    "build_method": "",
+    "controller": "LH\\CookieConsent\\XF\\Admin\\Controller\\Purpose",
+    "context": "cookieConsentPurpose",
+    "action_prefix": ""
+}

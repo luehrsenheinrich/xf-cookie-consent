@@ -1,0 +1,27 @@
+<xf:title>{{ phrase('cookie_purposes') }}</xf:title>
+
+<xf:pageaction>
+	<div class="buttonGroup">
+		<xf:button href="{{ link('cookie-consent/purposes/add') }}" icon="add">{{ phrase('add_cookie_purpose') }}</xf:button>
+	</div>
+</xf:pageaction>
+
+<xf:if is="$purposes is not empty">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:datalist>
+				<xf:foreach loop="$purposes" value="$purpose">
+					<xf:datarow>
+						<xf:main href="{{ link('cookie-consent/purposes/edit', $purpose) }}" label="{$purpose.title}" explain="{$purpose.name}" />
+						<xf:delete href="{{ link('cookie-consent/purposes/delete', $purpose) }}" />
+					</xf:datarow>
+				</xf:foreach>
+			</xf:datalist>
+		</div>
+		<div class="block-footer block-footer--split">
+			<span class="block-footer-counter">{{ display_totals($purposes) }}</span>
+		</div>
+	</div>
+<xf:else />
+	<div class="blockMessage">{{ phrase('no_items_have_been_created_yet') }}</div>
+</xf:if>

@@ -1,4 +1,22 @@
 {
+    "admin_navigation.cookieConsent.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "94977ddb4a0578596dfe9e45511d7422"
+    },
+    "admin_navigation.cookieConsentApps.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "1ddf333c6654f7f89c739dddfb4cc429"
+    },
+    "admin_navigation.cookieConsentPurpose.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "13833b6c7feaa181e13ce9571a690980"
+    },
     "option.ccAcceptAll.txt": {
         "global_cache": false,
         "version_id": 1,

@@ -1,12 +1,22 @@
 {
-    "admin/cookie_edit.html": {
+    "admin/app_edit.html": {
         "version_id": 1,
         "version_string": "0.0.1",
-        "hash": "46cc8fa86dae738f0fc97a5df64dfdf6"
+        "hash": "6f44f63335489b9f61bb3267f352e754"
     },
-    "admin/cookie_list.html": {
+    "admin/app_list.html": {
         "version_id": 1,
         "version_string": "0.0.1",
-        "hash": "7d95532511b6346a767d993e5f4cfd04"
+        "hash": "b4b9b619f0f19cf20c62a8235a63f7e9"
+    },
+    "admin/purpose_edit.html": {
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "35c0cca64c589f09a77871b3eaa27d9c"
+    },
+    "admin/purpose_list.html": {
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "ae3d8d1aad0a3ed66508a4dded78d502"
     }
 }

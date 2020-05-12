@@ -1,0 +1,11 @@
+{
+    "route_type": "admin",
+    "route_prefix": "cookie-consent",
+    "sub_name": "apps",
+    "format": "apps/:str<app_id>/",
+    "build_class": "",
+    "build_method": "",
+    "controller": "LH\\CookieConsent\\XF\\Admin\\Controller\\App",
+    "context": "cookieConsentApps",
+    "action_prefix": ""
+}
