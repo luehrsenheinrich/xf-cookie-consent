@@ -1,0 +1,1 @@
+Use this switch to enable/disable all apps.

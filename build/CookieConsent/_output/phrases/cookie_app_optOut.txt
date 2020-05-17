@@ -1,0 +1,1 @@
+This application is always loaded by default even before the user gave explicit consent. We recommend always leaving this off.

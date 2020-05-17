@@ -1,0 +1,1 @@
+This application is required and cannot be disabled by the user.

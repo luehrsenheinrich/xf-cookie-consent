@@ -1,0 +1,1 @@
+Each app should have a unique (and short) name.

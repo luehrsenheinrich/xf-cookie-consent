@@ -5,5 +5,5 @@
     "enabled": true,
     "action": "str_replace",
     "find": "\t<xf:corejs />\n\t<!--XF:JS-->",
-    "replace": "<xf:if is=\"$app == 'public'\">\n<xf:callback class=\"LH\\CookieConsent\\CookieConsent\" method=\"getCookieConsentConfigObject\"></xf:callback>\n<xf:js dev=\"lh/cookieconsent/klaro.bundle.js\" addon=\"LH/CookieConsent\"></xf:js>\n</xf:if>\n$0"
+    "replace": "<xf:if is=\"$app == 'public'\">\n\t<xf:js dev=\"lh/cookieconsent/klaro.bundle.js\" addon=\"LH/CookieConsent\" data-no-auto-load=\"true\"></xf:js>\n\t<xf:callback class=\"LH\\CookieConsent\\CookieConsent\" method=\"getCookieConsentConfigObject\"></xf:callback>\n</xf:if>\n$0"
 }

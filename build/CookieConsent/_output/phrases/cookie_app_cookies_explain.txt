@@ -1,0 +1,1 @@
+A list of regex expressions or strings giving the names of cookies set by this app. If the user withdraws consent for a given app, the plugin will then automatically delete all matching cookies. One per line.
