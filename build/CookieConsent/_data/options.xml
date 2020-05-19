@@ -1,2 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<options/>
+<options>
+  <option option_id="ccAcceptAll" edit_format="onoff" data_type="boolean">
+    <default_value>0</default_value>
+    <relation group_id="lhCookieConsent" display_order="130"/>
+  </option>
+  <option option_id="ccCookieExpires" edit_format="spinbox" data_type="positive_integer">
+    <default_value>365</default_value>
+    <relation group_id="lhCookieConsent" display_order="30"/>
+  </option>
+  <option option_id="ccCookieName" edit_format="textbox" data_type="string">
+    <default_value>xf_cookie_consent</default_value>
+    <relation group_id="lhCookieConsent" display_order="20"/>
+  </option>
+  <option option_id="ccDeclineAll" edit_format="onoff" data_type="boolean">
+    <default_value>0</default_value>
+    <relation group_id="lhCookieConsent" display_order="140"/>
+  </option>
+  <option option_id="ccDefaultState" edit_format="onoff" data_type="boolean">
+    <default_value>0</default_value>
+    <relation group_id="lhCookieConsent" display_order="110"/>
+  </option>
+  <option option_id="ccDisplayState" edit_format="radio" data_type="string">
+    <default_value>hide</default_value>
+    <edit_format_params>hide=Hide
+admin=Admin only
+show=Show</edit_format_params>
+    <relation group_id="lhCookieConsent" display_order="5"/>
+  </option>
+  <option option_id="ccMustConsent" edit_format="onoff" data_type="boolean">
+    <default_value>0</default_value>
+    <relation group_id="lhCookieConsent" display_order="120"/>
+  </option>
+  <option option_id="ccStorageMethod" edit_format="radio" data_type="string">
+    <default_value>localStorage</default_value>
+    <edit_format_params>cookie=Cookie
+localStorage=Local Storage</edit_format_params>
+    <relation group_id="lhCookieConsent" display_order="10"/>
+  </option>
+</options>

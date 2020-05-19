@@ -1,2 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<phrases/>
+<phrases>
+  <phrase title="add_cookie_app" version_id="1" version_string="0.0.1"><![CDATA[Add application]]></phrase>
+  <phrase title="add_cookie_purpose" version_id="1" version_string="0.0.1"><![CDATA[Add purpose]]></phrase>
+  <phrase title="admin_navigation.cookieConsent" version_id="1" version_string="0.0.1"><![CDATA[Cookie Consent]]></phrase>
+  <phrase title="admin_navigation.cookieConsentApps" version_id="1" version_string="0.0.1"><![CDATA[Applications]]></phrase>
+  <phrase title="admin_navigation.cookieConsentPurpose" version_id="1" version_string="0.0.1"><![CDATA[Purposes]]></phrase>
+  <phrase title="cc_accept" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Accept]]></phrase>
+  <phrase title="cc_accept_all" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Accept All]]></phrase>
+  <phrase title="cc_accept_selected" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Accept Selected]]></phrase>
+  <phrase title="cc_close" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Close]]></phrase>
+  <phrase title="cc_cookies" version_id="1" version_string="0.0.1"><![CDATA[Cookies]]></phrase>
+  <phrase title="cc_customize" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Customize]]></phrase>
+  <phrase title="cc_decline" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Decline]]></phrase>
+  <phrase title="cc_defaults_google_analytics_description" version_id="1" version_string="0.0.1"><![CDATA[Used to identify users for statistical analysis.]]></phrase>
+  <phrase title="cc_defaults_google_analytics_title" version_id="1" version_string="0.0.1"><![CDATA[Google Analytics]]></phrase>
+  <phrase title="cc_defaults_purpose_analytics" version_id="1" version_string="0.0.1"><![CDATA[Analytics]]></phrase>
+  <phrase title="cc_defaults_purpose_board" version_id="1" version_string="0.0.1"><![CDATA[Board]]></phrase>
+  <phrase title="cc_defaults_xenforo_description" version_id="1" version_string="0.0.1"><![CDATA[Saves user information like logins and preferences.]]></phrase>
+  <phrase title="cc_defaults_xenforo_title" version_id="1" version_string="0.0.1"><![CDATA[Xenforo]]></phrase>
+  <phrase title="cc_information_we_collect" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Information that we collect]]></phrase>
+  <phrase title="cc_opt_out" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[(opt-out)]]></phrase>
+  <phrase title="cc_opt_out_explain" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[This app is loaded by default (but you can opt out)]]></phrase>
+  <phrase title="cc_please_read_privacy_policy" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[To learn more, please read our {privacyPolicy}.]]></phrase>
+  <phrase title="cc_powered_by" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Powered by Klaro and Luehrsen // Heinrich]]></phrase>
+  <phrase title="cc_privacy_policy" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[privacy policy]]></phrase>
+  <phrase title="cc_purpose" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Purpose]]></phrase>
+  <phrase title="cc_purposes" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Purposes]]></phrase>
+  <phrase title="cc_required" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[(always required)]]></phrase>
+  <phrase title="cc_required_explain" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[This application is always required]]></phrase>
+  <phrase title="cc_save" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Save]]></phrase>
+  <phrase title="cc_see_and_customize_information" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Here you can see and customize the information that we collect about you.]]></phrase>
+  <phrase title="cc_there_were_changes" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[There were changes since your last visit, please update your consent]]></phrase>
+  <phrase title="cc_toggle_all" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Toggle all apps]]></phrase>
+  <phrase title="cc_toggle_all_explain" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[Use this switch to enable/disable all apps.]]></phrase>
+  <phrase title="cc_we_collect_for_purposes" version_id="1" version_string="0.0.1" global_cache="1"><![CDATA[We collect and process your personal information for the following purposes: {purposes}.]]></phrase>
+  <phrase title="cookie_app_active" version_id="1" version_string="0.0.1"><![CDATA[Active]]></phrase>
+  <phrase title="cookie_app_active_explain" version_id="1" version_string="0.0.1"><![CDATA[This application is active and shown in the consent modal.]]></phrase>
+  <phrase title="cookie_app_callback" version_id="1" version_string="0.0.1"><![CDATA[JavaScript Callback]]></phrase>
+  <phrase title="cookie_app_callback_explain" version_id="1" version_string="0.0.1"><![CDATA[An optional callback function that will be called each time the consent state for the app changes (true=consented). Passes the `app` config as the second parameter as well. ]]></phrase>
+  <phrase title="cookie_app_cookies" version_id="1" version_string="0.0.1"><![CDATA[Cookies]]></phrase>
+  <phrase title="cookie_app_cookies_explain" version_id="1" version_string="0.0.1"><![CDATA[A list of regex expressions or strings giving the names of cookies set by this app. If the user withdraws consent for a given app, the plugin will then automatically delete all matching cookies. One per line.]]></phrase>
+  <phrase title="cookie_app_description" version_id="1" version_string="0.0.1"><![CDATA[Description]]></phrase>
+  <phrase title="cookie_app_description_explain" version_id="1" version_string="0.0.1"><![CDATA[The description of you app as listed in the consent modal.]]></phrase>
+  <phrase title="cookie_app_name" version_id="1" version_string="0.0.1"><![CDATA[Name]]></phrase>
+  <phrase title="cookie_app_name_explain" version_id="1" version_string="0.0.1"><![CDATA[Each app should have a unique (and short) name.]]></phrase>
+  <phrase title="cookie_app_onlyOnce" version_id="1" version_string="0.0.1"><![CDATA[Only Once]]></phrase>
+  <phrase title="cookie_app_onlyOnce_explain" version_id="1" version_string="0.0.1"><![CDATA[The application will only be executed once regardless how often the user toggles it on and off.]]></phrase>
+  <phrase title="cookie_app_optOut" version_id="1" version_string="0.0.1"><![CDATA[Opt Out]]></phrase>
+  <phrase title="cookie_app_optOut_explain" version_id="1" version_string="0.0.1"><![CDATA[This application is always loaded by default even before the user gave explicit consent. We recommend always leaving this off.]]></phrase>
+  <phrase title="cookie_app_purposes" version_id="1" version_string="0.0.1"><![CDATA[Purposes]]></phrase>
+  <phrase title="cookie_app_purposes_explain" version_id="1" version_string="0.0.1"><![CDATA[The purpose(s) of this app. Will be listed on the consent notice.]]></phrase>
+  <phrase title="cookie_app_required" version_id="1" version_string="0.0.1"><![CDATA[Required]]></phrase>
+  <phrase title="cookie_app_required_explain" version_id="1" version_string="0.0.1"><![CDATA[If the app is required this application cannot be disabled by the user.]]></phrase>
+  <phrase title="cookie_app_title" version_id="1" version_string="0.0.1"><![CDATA[Title]]></phrase>
+  <phrase title="cookie_app_title_explain" version_id="1" version_string="0.0.1"><![CDATA[The title of you app as listed in the consent modal.]]></phrase>
+  <phrase title="cookie_apps" version_id="1" version_string="0.0.1"><![CDATA[Cookie Consent Applications]]></phrase>
+  <phrase title="cookie_purpose_name" version_id="1" version_string="0.0.1"><![CDATA[Name]]></phrase>
+  <phrase title="cookie_purpose_name_explain" version_id="1" version_string="0.0.1"><![CDATA[A unique name for this purpose.]]></phrase>
+  <phrase title="cookie_purpose_title" version_id="1" version_string="0.0.1"><![CDATA[Title]]></phrase>
+  <phrase title="cookie_purpose_title_explain" version_id="1" version_string="0.0.1"><![CDATA[A title for this purpose.]]></phrase>
+  <phrase title="cookie_purposes" version_id="1" version_string="0.0.1"><![CDATA[Cookie Consent Purposes]]></phrase>
+  <phrase title="edit_cookie_app" version_id="1" version_string="0.0.1"><![CDATA[Edit application]]></phrase>
+  <phrase title="option.ccAcceptAll" version_id="1" version_string="0.0.1"><![CDATA[Accept All]]></phrase>
+  <phrase title="option.ccCookieExpires" version_id="1" version_string="0.0.1"><![CDATA[Cookie Expiration]]></phrase>
+  <phrase title="option.ccCookieName" version_id="1" version_string="0.0.1"><![CDATA[Cookie Name]]></phrase>
+  <phrase title="option.ccDeclineAll" version_id="1" version_string="0.0.1"><![CDATA[Decline Button]]></phrase>
+  <phrase title="option.ccDefaultState" version_id="1" version_string="0.0.1"><![CDATA[Apps enabled by default]]></phrase>
+  <phrase title="option.ccDisplayState" version_id="1" version_string="0.0.1"><![CDATA[Display State]]></phrase>
+  <phrase title="option.ccMustConsent" version_id="1" version_string="0.0.1"><![CDATA[Must Consent]]></phrase>
+  <phrase title="option.ccStorageMethod" version_id="1" version_string="0.0.1"><![CDATA[Storage Method]]></phrase>
+  <phrase title="option_explain.ccAcceptAll" version_id="1" version_string="0.0.1"><![CDATA[Show a button to allow all cookies to be accepted.]]></phrase>
+  <phrase title="option_explain.ccCookieExpires" version_id="1" version_string="0.0.1"><![CDATA[The expiration time in days after which the consent cookie expires.]]></phrase>
+  <phrase title="option_explain.ccCookieName" version_id="1" version_string="0.0.1"><![CDATA[The name of the cookie, that we use for storing user consent decisions.]]></phrase>
+  <phrase title="option_explain.ccDeclineAll" version_id="1" version_string="0.0.1"><![CDATA[If we want to show a decline button.]]></phrase>
+  <phrase title="option_explain.ccDefaultState" version_id="1" version_string="0.0.1"><![CDATA[The default state for applications, if they are enabled by default.]]></phrase>
+  <phrase title="option_explain.ccDisplayState" version_id="1" version_string="0.0.1"><![CDATA[If the cookie consent modal shall be shown. Useful if you're still configuring the modal.]]></phrase>
+  <phrase title="option_explain.ccMustConsent" version_id="1" version_string="0.0.1"><![CDATA[If this is true the consent manager modal is immediately shown without the ability to interact with the site.]]></phrase>
+  <phrase title="option_explain.ccStorageMethod" version_id="1" version_string="0.0.1"><![CDATA[How the user's preferences should be stored.]]></phrase>
+  <phrase title="option_group.lhCookieConsent" version_id="1" version_string="0.0.1"><![CDATA[Cookie Consent]]></phrase>
+  <phrase title="option_group_description.lhCookieConsent" version_id="1" version_string="0.0.1"><![CDATA[Manage your cookie consent popup and how to handle the cookies]]></phrase>
+</phrases>

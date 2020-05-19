@@ -119,8 +119,7 @@ class CookieConsent {
 			'poweredBy'              => 'https://www.luehrsen-heinrich.de',
 		);
 
-		$html = '<xf:js dev="lh/cookieconsent/klaro.bundle.js" addon="LH/CookieConsent"></xf:js>';
-		$html .= '<script type="text/javascript"> window.cookieConsentConfig = ' . json_encode($config) . ';</script>';
+		$html = '<script type="text/javascript"> window.cookieConsentConfig = ' . json_encode($config) . ';</script>';
 
 		return $html;
 	}

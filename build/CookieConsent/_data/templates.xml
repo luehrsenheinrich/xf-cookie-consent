@@ -1,2 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<templates/>
+<templates>
+  <template type="admin" title="app_edit" version_id="1" version_string="0.0.1"><![CDATA[<xf:if is="$app.isInsert()">
+	<xf:title>{{ phrase('add_cookie_app') }}</xf:title>
+<xf:else />
+	<xf:title>{{ phrase('edit_cookie_app:') }} {$app.title}</xf:title>
+</xf:if>
+
+<xf:pageaction if="$app.isUpdate()">
+	<xf:button href="{{ link('cookie-consent/apps/delete', $app) }}" icon="delete" overlay="true" />
+</xf:pageaction>
+
+<xf:form action="{{ link('cookie-consent/apps/save', $app) }}" ajax="true" class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:textboxrow 
+				name="name" 
+				value="{{ $app.exists() ? $app.name : '' }}"
+				label="{{ phrase('cookie_app_name') }}"
+				explain="{{ phrase('cookie_app_name_explain') }}"
+			/>
+			<xf:textboxrow 
+				name="title" 
+				value="{{ $app.exists() ? $app.title : '' }}"
+				label="{{ phrase('cookie_app_title') }}"
+				explain="{{ phrase('cookie_app_title_explain') }}"
+			/>
+			<xf:textarearow 
+				name="description" 
+				value="{{ $app.exists() ? $app.description : '' }}" 
+				autosize="true"
+				label="{{ phrase('cookie_app_description') }}"
+				explain="{{ phrase('cookie_app_description_explain') }}" />
+			<xf:numberboxrow 
+				name="displayOrder"
+				value="{$app.displayOrder}" 
+				label="{{ phrase('cookie_app_display_order') }}"
+				explain="{{ phrase('cookie_app_display_order_explain') }}" />
+			
+			<hr class="formRowSep" />
+			
+			<xf:codeeditorrow 
+				name="cookies" 
+				value="{$app.cookies}"
+				mode="text" 
+				data-line-wrapping="true"
+				class="codeEditor--autoSize"
+				label="{{ phrase('cookie_app_cookies') }}"
+				explain="{{ phrase('cookie_app_cookies_explain') }}" />
+
+			<xf:codeeditorrow 
+				name="callback" 
+				value="{$app.callback}"
+				mode="javascript" 
+				data-line-wrapping="true"
+				class="codeEditor--autoSize"
+				label="{{ phrase('cookie_app_callback') }}"
+				explain="{{ phrase('cookie_app_callback_explain') }}" />
+			
+			<hr class="formRowSep" />
+					
+			<xf:checkboxrow name="purposes" rowtype="explainOffset" listclass="purpose"
+				data-xf-init="checkbox-select-disabler"
+				data-select="select[name=default_prefix_id]"
+				label="{{ phrase('cookie_app_purposes') }}"
+				explain="{{ phrase('cookie_app_purposes_explain') }}">
+
+
+				<xf:foreach loop="$purposes" key="$purposeId" value="$purpose">
+					<xf:option 
+						value="{$purposeId}" 
+						selected="in_array($purposeId, $app.purposes)"
+						label="{$purpose.title}"
+						/>
+				</xf:foreach>
+				<xf:hint>
+					<xf:checkbox standalone="true">
+						<xf:option check-all=".purpose">{{ phrase('select_all') }}</xf:option>
+					</xf:checkbox>
+				</xf:hint>
+			</xf:checkboxrow>
+			
+			<hr class="formRowSep" />
+			
+			<xf:checkboxrow explain="{{ phrase('cookie_app_active_explain') }}">
+				<xf:option name="active" value="1" selected="$app.active" label="{{ phrase('cookie_app_active') }}" />
+			</xf:checkboxrow>
+			<xf:checkboxrow explain="{{ phrase('cookie_app_required_explain') }}">
+				<xf:option name="required" value="1" selected="$app.required" label="{{ phrase('cookie_app_required') }}" />
+			</xf:checkboxrow>
+			<xf:checkboxrow explain="{{ phrase('cookie_app_optOut_explain') }}">
+				<xf:option name="optOut" value="1" selected="$app.optOut" label="{{ phrase('cookie_app_optOut') }}" />
+			</xf:checkboxrow>
+			<xf:checkboxrow explain="{{ phrase('cookie_app_onlyOnce_explain') }}">
+				<xf:option name="onlyOnce" value="1" selected="$app.onlyOnce" label="{{ phrase('cookie_app_onlyOnce') }}" />
+			</xf:checkboxrow>
+		</div>
+		<xf:submitrow sticky="true" icon="save" />
+	</div>
+
+</xf:form>]]></template>
+  <template type="admin" title="app_list" version_id="1" version_string="0.0.1"><![CDATA[<xf:title>{{ phrase('cookie_apps') }}</xf:title>
+
+<xf:pageaction>
+	<div class="buttonGroup">
+		<xf:button href="{{ link('cookie-consent/apps/add') }}" icon="add">{{ phrase('add_cookie_app') }}</xf:button>
+	</div>
+</xf:pageaction>
+
+<xf:if is="$apps is not empty">
+	<xf:form action="{{ link('cookie-consent/apps/toggle') }}"
+			 ajax="{{ true }}" class="block">
+		<div class="block-outer">
+			<xf:macro template="filter_macros" name="quick_filter" arg-key="apps" arg-class="block-outer-opposite" />
+		</div>
+		<div class="block-container">
+			<div class="block-body">
+				<xf:datalist>
+					<xf:foreach loop="$apps" value="$app">
+						<xf:datarow>
+							<xf:main href="{{ link('cookie-consent/apps/edit', $app) }}" label="{$app.title}" explain="{$app.name}">
+							</xf:main>
+							<xf:toggle name="active[{$app.app_id}]" selected="$app.active"
+									   class="dataList-cell--separated" submit="true"
+									   tooltip="{{ phrase('enable_disable_x', {'title': $app.title }) }}" />
+							<xf:delete href="{{ link('cookie-consent/apps/delete', $app) }}" />
+						</xf:datarow>
+					</xf:foreach>
+				</xf:datalist>
+			</div>
+			<div class="block-footer block-footer--split">
+				<span class="block-footer-counter">{{ display_totals($apps) }}</span>
+			</div>
+		</div>
+	</xf:form>
+<xf:else />
+	<div class="blockMessage">{{ phrase('no_items_have_been_created_yet') }}</div>
+</xf:if>]]></template>
+  <template type="admin" title="purpose_edit" version_id="1" version_string="0.0.1"><![CDATA[<xf:if is="$purpose.isInsert()">
+	<xf:title>{{ phrase('add_cookie_purpose') }}</xf:title>
+<xf:else />
+	<xf:title>{{ phrase('edit_cookie_purpose:') }} {$purpose.title}</xf:title>
+</xf:if>
+
+<xf:pageaction if="$purpose.isUpdate()">
+	<xf:button href="{{ link('cookie-consent/purposes/delete', $purpose) }}" icon="delete" overlay="true" />
+</xf:pageaction>
+
+<xf:form action="{{ link('cookie-consent/purposes/save', $purpose) }}" ajax="true" class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:textboxrow 
+				name="name" 
+				value="{{ $purpose.exists() ? $purpose.name : '' }}"
+				label="{{ phrase('cookie_purpose_name') }}"
+				explain="{{ phrase('cookie_purpose_name_explain') }}"
+			/>
+			<xf:textboxrow 
+				name="title" 
+				value="{{ $purpose.exists() ? $purpose.title : '' }}"
+				label="{{ phrase('cookie_purpose_title') }}"
+				explain="{{ phrase('cookie_purpose_title_explain') }}"
+			/>
+		</div>
+		<xf:submitrow sticky="true" icon="save" />
+	</div>
+
+</xf:form>]]></template>
+  <template type="admin" title="purpose_list" version_id="1" version_string="0.0.1"><![CDATA[<xf:title>{{ phrase('cookie_purposes') }}</xf:title>
+
+<xf:pageaction>
+	<div class="buttonGroup">
+		<xf:button href="{{ link('cookie-consent/purposes/add') }}" icon="add">{{ phrase('add_cookie_purpose') }}</xf:button>
+	</div>
+</xf:pageaction>
+
+<xf:if is="$purposes is not empty">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:datalist>
+				<xf:foreach loop="$purposes" value="$purpose">
+					<xf:datarow>
+						<xf:main href="{{ link('cookie-consent/purposes/edit', $purpose) }}" label="{$purpose.title}" explain="{$purpose.name}" />
+						<xf:delete href="{{ link('cookie-consent/purposes/delete', $purpose) }}" />
+					</xf:datarow>
+				</xf:foreach>
+			</xf:datalist>
+		</div>
+		<div class="block-footer block-footer--split">
+			<span class="block-footer-counter">{{ display_totals($purposes) }}</span>
+		</div>
+	</div>
+<xf:else />
+	<div class="blockMessage">{{ phrase('no_items_have_been_created_yet') }}</div>
+</xf:if>]]></template>
+</templates>

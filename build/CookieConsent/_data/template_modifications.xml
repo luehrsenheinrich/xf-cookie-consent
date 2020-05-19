@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <template_modifications>
-  <modification type="public" template="PAGE_CONTAINER" modification_key="lh_cookieconsent_pagecontainer" description="Add data needed for this addon to the page container." execution_order="10" enabled="1" action="str_replace">
-    <find><![CDATA[</body>
-</html>]]></find>
-    <replace><![CDATA[<xf:js dev="lh/cookieconsent/test.js" addon="LH/CookieConsent"  />
+  <modification type="public" template="PAGE_CONTAINER" modification_key="cc_cookie_footer_nav" description="Add a cookie option to the footer navigation" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:if is="$xf.homePageUrl">
+						<li><a href="{$xf.homePageUrl}">{{ phrase('home') }}</a></li>
+					</xf:if>]]></find>
+    <replace><![CDATA[$0
+<xf:if is="( $xf.visitor.is_admin && $xf.options.ccDisplayState === 'admin' ) || $xf.options.ccDisplayState === 'show'">
+	<li>
+		<a href="#footer" class="js-cookie-consent-modal">{{ phrase('cc_cookies') }}</a>
+	</li>
+</xf:if>]]></replace>
+  </modification>
+  <modification type="public" template="google_analytics" modification_key="cc_google_analytics" description="Add the cookie consent logic to the google tag manager" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<script async src=]]></find>
+    <replace><![CDATA[<script type="text/plain" data-type="text/javascript" data-name="google_analytics" async data-src=]]></replace>
+  </modification>
+  <modification type="public" template="helper_js_global" modification_key="lh_cookieconsent_embed_js" description="Embed our JS files and config" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[	<xf:corejs />
+	<!--XF:JS-->]]></find>
+    <replace><![CDATA[<xf:if is="$app == 'public'">
+	<xf:if is="$xf.options.ccDisplayState === 'show' || ( $xf.visitor.is_admin && $xf.options.ccDisplayState === 'admin' )">
+		<xf:js prod="lh/cookieconsent/klaro.min.js" dev="lh/cookieconsent/klaro.bundle.js" addon="LH/CookieConsent" data-no-auto-load="true"></xf:js>
+		<xf:callback class="LH\CookieConsent\CookieConsent" method="getCookieConsentConfigObject"></xf:callback>
+	</xf:if>
+</xf:if>
 $0]]></replace>
   </modification>
 </template_modifications>

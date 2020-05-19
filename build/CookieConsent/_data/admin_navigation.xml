@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<admin_navigation/>
+<admin_navigation>
+  <admin_navigation_entry navigation_id="cookieConsent" parent_navigation_id="setup" display_order="4000" icon="fa-cookie-bite" admin_permission_id="option" debug_only="0" development_only="0" hide_no_children="0"/>
+  <admin_navigation_entry navigation_id="cookieConsentApps" parent_navigation_id="cookieConsent" display_order="100" link="cookie-consent/apps" admin_permission_id="option" debug_only="0" development_only="0" hide_no_children="0"/>
+  <admin_navigation_entry navigation_id="cookieConsentPurpose" parent_navigation_id="cookieConsent" display_order="200" link="cookie-consent/purposes" admin_permission_id="option" debug_only="0" development_only="0" hide_no_children="0"/>
+</admin_navigation>

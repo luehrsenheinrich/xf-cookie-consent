@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<routes/>
+<routes>
+  <route route_type="admin" route_prefix="cookie-consent" sub_name="apps" format="apps/:str&lt;app_id&gt;/" controller="LH\CookieConsent\XF\Admin\Controller\App" context="cookieConsentApps"/>
+  <route route_type="admin" route_prefix="cookie-consent" sub_name="purposes" format="purposes/:str&lt;purpose_id&gt;/" controller="LH\CookieConsent\XF\Admin\Controller\Purpose" context="cookieConsentPurpose"/>
+</routes>
