@@ -1,0 +1,9 @@
+{
+    "template": "PAGE_CONTAINER",
+    "description": "Add a cookie option to the footer navigation",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:if is=\"$xf.homePageUrl\">\n\t\t\t\t\t\t<li><a href=\"{$xf.homePageUrl}\">{{ phrase('home') }}</a></li>\n\t\t\t\t\t</xf:if>",
+    "replace": "$0\n<xf:if is=\"( $xf.visitor.is_admin && $xf.options.ccDisplayState === 'admin' ) || $xf.options.ccDisplayState === 'show'\">\n\t<li>\n\t\t<a href=\"#footer\" class=\"js-cookie-consent-modal\">{{ phrase('cc_cookies') }}</a>\n\t</li>\n</xf:if>"
+}

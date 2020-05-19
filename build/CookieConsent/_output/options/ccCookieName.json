@@ -5,7 +5,7 @@
     "sub_options": [],
     "validation_class": "",
     "validation_method": "",
-    "default_value": "xfCookieConsent",
+    "default_value": "xf_cookie_consent",
     "relations": {
         "lhCookieConsent": 20
     }

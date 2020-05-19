@@ -29,6 +29,7 @@ class App extends Entity
 				'type' => self::STR,
 				'maxLength' => 255,
 			],
+			'displayOrder' => ['type' => self::UINT, 'default' => 10],
 			'purposes' => ['type' => self::JSON_ARRAY, 'default' => []],
 			'cookies' => ['type' => self::STR, 'default' => ''],
 			'callback' => ['type' => self::STR, 'default' => ''],

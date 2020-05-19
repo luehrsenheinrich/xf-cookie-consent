@@ -108,6 +108,7 @@ class App extends AbstractController
 			'required' => 'bool',
 			'optOut' => 'bool',
 			'onlyOnce' => 'bool',
+			'displayOrder' => 'uint',
 		]);
 
 		$form = $this->formAction();

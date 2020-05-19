@@ -1,0 +1,1 @@
+If the cookie consent modal shall be shown. Useful if you're still configuring the modal.

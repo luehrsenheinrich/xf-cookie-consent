@@ -29,6 +29,11 @@
 				autosize="true"
 				label="{{ phrase('cookie_app_description') }}"
 				explain="{{ phrase('cookie_app_description_explain') }}" />
+			<xf:numberboxrow 
+				name="displayOrder"
+				value="{$app.displayOrder}" 
+				label="{{ phrase('cookie_app_display_order') }}"
+				explain="{{ phrase('cookie_app_display_order_explain') }}" />
 			
 			<hr class="formRowSep" />
 			
@@ -75,11 +80,17 @@
 			
 			<hr class="formRowSep" />
 			
-			<xf:checkboxrow>
+			<xf:checkboxrow explain="{{ phrase('cookie_app_active_explain') }}">
 				<xf:option name="active" value="1" selected="$app.active" label="{{ phrase('cookie_app_active') }}" />
-				<xf:option name="required" value="0" selected="$app.required" label="{{ phrase('cookie_app_required') }}" />
-				<xf:option name="optOut" value="0" selected="$app.optOut" label="{{ phrase('cookie_app_optOut') }}" />
-				<xf:option name="onlyOnce" value="0" selected="$app.onlyOnce" label="{{ phrase('cookie_app_onlyOnce') }}" />
+			</xf:checkboxrow>
+			<xf:checkboxrow explain="{{ phrase('cookie_app_required_explain') }}">
+				<xf:option name="required" value="1" selected="$app.required" label="{{ phrase('cookie_app_required') }}" />
+			</xf:checkboxrow>
+			<xf:checkboxrow explain="{{ phrase('cookie_app_optOut_explain') }}">
+				<xf:option name="optOut" value="1" selected="$app.optOut" label="{{ phrase('cookie_app_optOut') }}" />
+			</xf:checkboxrow>
+			<xf:checkboxrow explain="{{ phrase('cookie_app_onlyOnce_explain') }}">
+				<xf:option name="onlyOnce" value="1" selected="$app.onlyOnce" label="{{ phrase('cookie_app_onlyOnce') }}" />
 			</xf:checkboxrow>
 		</div>
 		<xf:submitrow sticky="true" icon="save" />

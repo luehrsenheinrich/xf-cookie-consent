@@ -2,20 +2,20 @@
     "ccAcceptAll.json": {
         "hash": "3ba82c9bbbc722ec29f4a5eb46a1d026"
     },
-    "ccApp.json": {
-        "hash": "3e26173bfe3a02a197a68118c623712f"
-    },
     "ccCookieExpires.json": {
         "hash": "a0aaa08d79d1d676d0deb5843538e0ef"
     },
     "ccCookieName.json": {
-        "hash": "b977fb90cc745ff4b412869b656e2bb4"
+        "hash": "f20cd7232d90cc6bb57135bd36a420eb"
     },
     "ccDeclineAll.json": {
         "hash": "2ffbf6f6ad61ac443e23d4ac6ddd97ce"
     },
     "ccDefaultState.json": {
         "hash": "00f765d8af516bcc468674e546ed8de5"
+    },
+    "ccDisplayState.json": {
+        "hash": "e7cc5fd3a01a4f615a5c4c7f4a3370ed"
     },
     "ccMustConsent.json": {
         "hash": "4fa7e57e6f1e0eac566a6ef9617376c4"

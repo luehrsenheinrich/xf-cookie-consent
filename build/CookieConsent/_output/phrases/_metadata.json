@@ -5,6 +5,12 @@
         "version_string": "0.0.1",
         "hash": "c57994a4c85a1b3cb1a570d24a9a4d85"
     },
+    "add_cookie_purpose.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "adc51cb1b42ede2e14a1fd1640bb1265"
+    },
     "admin_navigation.cookieConsent.txt": {
         "global_cache": false,
         "version_id": 1,
@@ -47,6 +53,12 @@
         "version_string": "0.0.1",
         "hash": "d3d2e617335f08df83599665eef8a418"
     },
+    "cc_cookies.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "597b56e53847cd6a4712ac183f61fa68"
+    },
     "cc_customize.txt": {
         "global_cache": true,
         "version_id": 1,
@@ -58,6 +70,42 @@
         "version_id": 1,
         "version_string": "0.0.1",
         "hash": "0d3627289b893d3eea08e52589ed06ae"
+    },
+    "cc_defaults_google_analytics_description.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "07d7eaac9ba54258422985d1f25c79ca"
+    },
+    "cc_defaults_google_analytics_title.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "d86cf69a8b82547a94ca3f6a307cf9a6"
+    },
+    "cc_defaults_purpose_analytics.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "a768caa988605a2846599cf7e2d0c26a"
+    },
+    "cc_defaults_purpose_board.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "6036d0a8b885529156168b3b69ee03cc"
+    },
+    "cc_defaults_xenforo_description.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "ae177045e51979cf12f94719880229e8"
+    },
+    "cc_defaults_xenforo_title.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "34a75fbf5a184c65ae29c5845f3d8f7a"
     },
     "cc_information_we_collect.txt": {
         "global_cache": true,
@@ -159,6 +207,12 @@
         "global_cache": false,
         "version_id": 1,
         "version_string": "0.0.1",
+        "hash": "4d3d769b812b6faa6b76e1a8abaece2d"
+    },
+    "cookie_app_active_explain.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
         "hash": "40d3b7d60603fa48ee525a5bbeb4fda0"
     },
     "cookie_app_callback.txt": {
@@ -213,9 +267,21 @@
         "global_cache": false,
         "version_id": 1,
         "version_string": "0.0.1",
-        "hash": "1ba90d4e8a97d1ae16df6fca33ee46d0"
+        "hash": "73fddf6b6c9f7a9675e49b82c5151a96"
+    },
+    "cookie_app_onlyOnce_explain.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "74d53b97aecb716f5d64935aee3ec00d"
     },
     "cookie_app_optOut.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "5fcdefcf28bbb70c90a6e3f541f0a95a"
+    },
+    "cookie_app_optOut_explain.txt": {
         "global_cache": false,
         "version_id": 1,
         "version_string": "0.0.1",
@@ -237,7 +303,13 @@
         "global_cache": false,
         "version_id": 1,
         "version_string": "0.0.1",
-        "hash": "b421138496645c6175baf7c8f3f9863d"
+        "hash": "b651efdb98a5d6bd2b3935d0c3f4a5e2"
+    },
+    "cookie_app_required_explain.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "424931d00340fb1b54c2f3295d58345e"
     },
     "cookie_app_title.txt": {
         "global_cache": false,
@@ -257,6 +329,36 @@
         "version_string": "0.0.1",
         "hash": "fa5e932be4a3fc2fd51329c83a6c5cb8"
     },
+    "cookie_purpose_name.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "49ee3087348e8d44e1feda1917443987"
+    },
+    "cookie_purpose_name_explain.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "b36f40da7628111f86d8b99ce1bb2d9a"
+    },
+    "cookie_purpose_title.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "b78a3223503896721cca1303f776159b"
+    },
+    "cookie_purpose_title_explain.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "1d81e86fefe65194663570ec0c3586d4"
+    },
+    "cookie_purposes.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "b4c773e0db84664ff242f57e442ce385"
+    },
     "edit_cookie_app.txt": {
         "global_cache": false,
         "version_id": 1,
@@ -268,12 +370,6 @@
         "version_id": 1,
         "version_string": "0.0.1",
         "hash": "1a9bf41c457d79d50e35dcfadafbd966"
-    },
-    "option.ccApp.txt": {
-        "global_cache": false,
-        "version_id": 1,
-        "version_string": "0.0.1",
-        "hash": "a6f00c82b6eb55a13a1f242313aaf9c9"
     },
     "option.ccCookieExpires.txt": {
         "global_cache": false,
@@ -299,6 +395,12 @@
         "version_string": "0.0.1",
         "hash": "1835762c7b720a89300f57ff92310033"
     },
+    "option.ccDisplayState.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "c445a811e292cbb386f2ba35b666307a"
+    },
     "option.ccMustConsent.txt": {
         "global_cache": false,
         "version_id": 1,
@@ -316,12 +418,6 @@
         "version_id": 1,
         "version_string": "0.0.1",
         "hash": "12d46b5d88f302dc0b118d6bb0737f90"
-    },
-    "option_explain.ccApp.txt": {
-        "global_cache": false,
-        "version_id": 1,
-        "version_string": "0.0.1",
-        "hash": "d41d8cd98f00b204e9800998ecf8427e"
     },
     "option_explain.ccCookieExpires.txt": {
         "global_cache": false,
@@ -346,6 +442,12 @@
         "version_id": 1,
         "version_string": "0.0.1",
         "hash": "c513e044ce758e59b41101c9d5e6a240"
+    },
+    "option_explain.ccDisplayState.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "0.0.1",
+        "hash": "5f5436109e3698f31c36c00bbaae94e2"
     },
     "option_explain.ccMustConsent.txt": {
         "global_cache": false,

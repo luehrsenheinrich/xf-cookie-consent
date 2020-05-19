@@ -1,0 +1,1 @@
+If the app is required this application cannot be disabled by the user.

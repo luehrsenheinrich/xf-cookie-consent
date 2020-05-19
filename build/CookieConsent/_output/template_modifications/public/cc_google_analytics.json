@@ -1,0 +1,9 @@
+{
+    "template": "google_analytics",
+    "description": "Add the cookie consent logic to the google tag manager",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<script async src=",
+    "replace": "<script type=\"text/plain\" data-type=\"text/javascript\" data-name=\"google_analytics\" async data-src="
+}

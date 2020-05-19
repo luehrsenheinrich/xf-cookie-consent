@@ -1,0 +1,12 @@
+{
+    "edit_format": "radio",
+    "edit_format_params": "hide=Hide\nadmin=Admin only\nshow=Show",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "default_value": "hide",
+    "relations": {
+        "lhCookieConsent": 5
+    }
+}

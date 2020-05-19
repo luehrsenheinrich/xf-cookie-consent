@@ -13,6 +13,6 @@ class App extends Repository
 	public function findAppsForList()
 	{
 		$appFinder = $this->finder('LH\CookieConsent:App');
-		return $appFinder->order(['app_id']);
+		return $appFinder->order(['displayOrder'], 'ASC');
 	}
 }

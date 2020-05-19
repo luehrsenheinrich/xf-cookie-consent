@@ -1,1 +1,1 @@
-The will only be executed once regardless how often the user toggles it on and off.
+Only Once

@@ -6,7 +6,7 @@ class CookieConsent {
 	public static function getCookieConsentConfigObject()
 	{
 		$appFinder = \XF::finder('LH\CookieConsent:App');
-		$apps = $appFinder->where('active', 1)->fetch();
+		$apps = $appFinder->where('active', 1)->order('displayOrder', 'ASC')->fetch();
 
 		$purposeFinder = \XF::finder('LH\CookieConsent:Purpose');
 		$purposes = $purposeFinder->fetch();

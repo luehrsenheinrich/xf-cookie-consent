@@ -1,5 +1,11 @@
 {
+    "public/cc_cookie_footer_nav.json": {
+        "hash": "a077098376b89f6497ad8a7685bfb37a"
+    },
+    "public/cc_google_analytics.json": {
+        "hash": "2b4bb445141cdb3dbb5312400faed287"
+    },
     "public/lh_cookieconsent_embed_js.json": {
-        "hash": "4abcc131548127beb93cae25f30ae7d8"
+        "hash": "a2dee20ba06c8b798e4b921c69c312d5"
     }
 }
